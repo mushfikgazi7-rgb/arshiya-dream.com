@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>For Arshiya 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ⭐ Falling stars background -->
+  <canvas id="stars"></canvas>
+
+  <!-- 🎵 Background music (replace file in /music) -->
+  <audio id="bgMusic" autoplay loop>
+    <source src="music/background.mp3" type="audio/mpeg" />
+  </audio>
+  <button id="musicBtn" aria-label="Toggle music">🔊 Pause</button>
+
+  <!-- 🖼️ FB-style banner -->
+  <header class="banner">
+    <img src="images/banner.jpg" alt="Cover Banner" />
+    <img class="portrait" src="images/portrait.png" alt="Profile portrait" />
+    <img class="vector" src="images/vector.png" alt="Vector portrait" />
+  </header>
+
+  <!-- 🌍 Places (cards are injected from quotes.js by script.js) -->
+  <main id="places" class="places"></main>
+
+  <!-- 💌 final animated message -->
+  <section class="final">
+    <p id="finalQuote" class="typepulse"></p>
+  </section>
+
+  <script src="quotes.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
